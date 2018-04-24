@@ -7,6 +7,8 @@ ini_set('display_errors', TRUE);
 //Require the files (fat-free)
 require_once('vendor/autoload.php');
 
+require "models/PDO.php";
+
 //Create an instance of the Base Class
 $f3 = Base :: instance();
 
