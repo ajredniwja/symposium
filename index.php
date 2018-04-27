@@ -35,5 +35,12 @@
         echo $template->render('views/add-participant.html');
     });
 
+    $f3->route('GET|POST /judge', function ()
+    {
+        $template = new Template();
+        //render
+        echo $template->render('views/judge.html');
+    });
+
     //Run fat free
     $f3->run();
